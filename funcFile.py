@@ -1,0 +1,10 @@
+import Bert_100G
+
+setChannelPattern = Bert_100G.setChannelPattern
+setChannelPolarity = Bert_100G.setChannelPolarity
+setChannelAmpLitude = Bert_100G.setChannelAmpLitude
+setChannelTestTime = Bert_100G.setChannelTestTime
+queryChannelPattern = Bert_100G.queryChannelPattern
+queryChannelPolarity = Bert_100G.queryChannelPolarity
+queryChannelAmpLitude = Bert_100G.queryChannelAmpLitude
+queryChannelTestTime = Bert_100G.queryChannelTestTime

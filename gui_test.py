@@ -1,0 +1,135 @@
+# -*- coding: utf-8 -*-
+
+# Form implementation generated from reading ui file 'gui_test.ui'
+#
+# Created by: PyQt5 UI code generator 5.13.0
+#
+# WARNING! All changes made in this file will be lost!
+
+
+from PyQt5 import QtCore, QtGui, QtWidgets
+
+
+class Ui_Form(object):
+    def setupUi(self, Form):
+        Form.setObjectName("Form")
+        Form.resize(436, 284)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Preferred)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(Form.sizePolicy().hasHeightForWidth())
+        Form.setSizePolicy(sizePolicy)
+        Form.setMaximumSize(QtCore.QSize(16777215, 16777215))
+        self.textEdit_input = QtWidgets.QTextEdit(Form)
+        self.textEdit_input.setGeometry(QtCore.QRect(20, 70, 181, 171))
+        font = QtGui.QFont()
+        font.setFamily("Arial")
+        font.setPointSize(12)
+        self.textEdit_input.setFont(font)
+        self.textEdit_input.setObjectName("textEdit_input")
+        self.label = QtWidgets.QLabel(Form)
+        self.label.setGeometry(QtCore.QRect(70, 40, 101, 21))
+        font = QtGui.QFont()
+        font.setFamily("Arial")
+        font.setPointSize(14)
+        self.label.setFont(font)
+        self.label.setObjectName("label")
+        self.label_2 = QtWidgets.QLabel(Form)
+        self.label_2.setGeometry(QtCore.QRect(270, 10, 101, 21))
+        font = QtGui.QFont()
+        font.setFamily("Arial")
+        font.setPointSize(14)
+        self.label_2.setFont(font)
+        self.label_2.setObjectName("label_2")
+        self.label_3 = QtWidgets.QLabel(Form)
+        self.label_3.setGeometry(QtCore.QRect(230, 110, 61, 16))
+        font = QtGui.QFont()
+        font.setFamily("Arial")
+        font.setPointSize(12)
+        self.label_3.setFont(font)
+        self.label_3.setObjectName("label_3")
+        self.label_instrument = QtWidgets.QLabel(Form)
+        self.label_instrument.setGeometry(QtCore.QRect(300, 110, 111, 16))
+        font = QtGui.QFont()
+        font.setFamily("Arial")
+        font.setPointSize(12)
+        self.label_instrument.setFont(font)
+        self.label_instrument.setObjectName("label_instrument")
+        self.label_return = QtWidgets.QLabel(Form)
+        self.label_return.setGeometry(QtCore.QRect(280, 140, 101, 21))
+        font = QtGui.QFont()
+        font.setFamily("Arial")
+        font.setPointSize(14)
+        self.label_return.setFont(font)
+        self.label_return.setObjectName("label_return")
+        self.textEdit_return = QtWidgets.QTextEdit(Form)
+        self.textEdit_return.setEnabled(False)
+        self.textEdit_return.setGeometry(QtCore.QRect(230, 170, 191, 101))
+        font = QtGui.QFont()
+        font.setFamily("Arial")
+        font.setPointSize(12)
+        self.textEdit_return.setFont(font)
+        self.textEdit_return.setObjectName("textEdit_return")
+        self.listView_instrument = QtWidgets.QListView(Form)
+        self.listView_instrument.setEnabled(True)
+        self.listView_instrument.setGeometry(QtCore.QRect(230, 40, 191, 61))
+        font = QtGui.QFont()
+        font.setPointSize(12)
+        self.listView_instrument.setFont(font)
+        self.listView_instrument.setObjectName("listView_instrument")
+        self.pushBtn_send = QtWidgets.QPushButton(Form)
+        self.pushBtn_send.setGeometry(QtCore.QRect(70, 250, 81, 21))
+        font = QtGui.QFont()
+        font.setFamily("Arial")
+        font.setPointSize(14)
+        self.pushBtn_send.setFont(font)
+        self.pushBtn_send.setObjectName("pushBtn_send")
+        self.layoutWidget = QtWidgets.QWidget(Form)
+        self.layoutWidget.setGeometry(QtCore.QRect(30, 10, 159, 20))
+        self.layoutWidget.setObjectName("layoutWidget")
+        self.gridLayout = QtWidgets.QGridLayout(self.layoutWidget)
+        self.gridLayout.setContentsMargins(0, 0, 0, 0)
+        self.gridLayout.setObjectName("gridLayout")
+        self.radioBtn_wire = QtWidgets.QRadioButton(self.layoutWidget)
+        font = QtGui.QFont()
+        font.setFamily("Arial")
+        font.setPointSize(12)
+        self.radioBtn_wire.setFont(font)
+        self.radioBtn_wire.setObjectName("radioBtn_wire")
+        self.gridLayout.addWidget(self.radioBtn_wire, 0, 0, 1, 1)
+        self.radioBtn_wireless = QtWidgets.QRadioButton(self.layoutWidget)
+        font = QtGui.QFont()
+        font.setFamily("Arial")
+        font.setPointSize(12)
+        self.radioBtn_wireless.setFont(font)
+        self.radioBtn_wireless.setObjectName("radioBtn_wireless")
+        self.gridLayout.addWidget(self.radioBtn_wireless, 0, 1, 1, 1)
+
+        self.retranslateUi(Form)
+        self.radioBtn_wire.clicked.connect(Form.radiobtn_wire_click)
+        self.radioBtn_wireless.clicked.connect(Form.radiobtn_wireless_click)
+        self.pushBtn_send.clicked.connect(Form.pushBtn_send_click)
+        self.listView_instrument.clicked['QModelIndex'].connect(Form.listView_instrument_click)
+        QtCore.QMetaObject.connectSlotsByName(Form)
+
+    def retranslateUi(self, Form):
+        _translate = QtCore.QCoreApplication.translate
+        Form.setWindowTitle(_translate("Form", "SCPI用户界面"))
+        self.textEdit_input.setHtml(_translate("Form", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:\'Arial\'; font-size:12pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p></body></html>"))
+        self.label.setText(_translate("Form", "SCPI命令输入"))
+        self.label_2.setText(_translate("Form", "仪器命令树选择"))
+        self.label_3.setText(_translate("Form", "当前选择："))
+        self.label_instrument.setText(_translate("Form", "无"))
+        self.label_return.setText(_translate("Form", "仪器返回信息"))
+        self.textEdit_return.setHtml(_translate("Form", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:\'Arial\'; font-size:12pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p></body></html>"))
+        self.pushBtn_send.setText(_translate("Form", "发送"))
+        self.radioBtn_wire.setText(_translate("Form", "有线连接  "))
+        self.radioBtn_wireless.setText(_translate("Form", "  无线连接  "))

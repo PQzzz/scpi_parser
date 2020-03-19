@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SCPI Device="100G Bert">
+    <Public cmd="IDN" queryCmdID="p1" setCmdID=""/>
+    <Public cmd="RST" queryCmdID="" setCmdID="p2"/>
+    <Public cmd="ESE" queryCmdID="p3" setCmdID="p3"/>
+    <Specific cmd="SOURce1" level="1" isEnd="0" queryCmdID="" setCmdID="">
+        <Specific cmd="PATTern" level="2" isEnd="0" queryCmdID="" setCmdID="">
+            <Specific cmd="LENGth" level="3" isEnd="1" queryCmdID="s1" setCmdID="s1"/>
+        </Specific>
+        <Specific cmd="OUTPut" level="2" isEnd="1" queryCmdID="" setCmdID="">
+            <Specific cmd="POLarity" level="3" isEnd="1" queryCmdID="s2" setCmdID="s2"/>
+            <Specific cmd="AMPLitude" level="3" isEnd="1" queryCmdID="s3" setCmdID="s3"/>
+        </Specific>
+        <Specific cmd="TTIMe" level="2" isEnd="1" queryCmdID="s4" setCmdID="s4"/>
+    </Specific>
+    <Specific cmd="SOURce" level="1" isEnd="0" queryCmdID="" setCmdID="">
+        <Specific cmd="ALL" level="2" isEnd="0" queryCmdID="" setCmdID="">
+            <Specific cmd="OUTPut" level="3" isEnd="0" queryCmdID="" setCmdID=""/>
+        </Specific>
+        <Specific cmd="RATe" level="4" isEnd="1" queryCmdID="s5" setCmdID="s5"/>
+        <Specific cmd="CDIVide" level="4" isEnd="1" queryCmdID="s6" setCmdID="s6"/>
+    </Specific>
+</SCPI>
