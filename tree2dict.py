@@ -26,7 +26,6 @@ def tree2dictSecific(root,specific_dict):
 
             tree2dictSecific(node, specific_dict[key].lowAddrSet)
 
-
     return specific_dict
 
 
@@ -42,15 +41,18 @@ def cmdShorten(cmd):
     return key
 
 
+def tree2dict():
+    public_dict = {}
+    public_dict = tree2dictPublic(root)
+    specific_dict = {}
+    specific_dict = tree2dictSecific(root, specific_dict)
 
+    return public_dict, specific_dict
 
 
 if __name__ == '__main__':
     root = Xml2Tree().Parse('Bert_100G.xml')
-    public_dict = tree2dictPublic(root)
-    # print(public_dict)
-    specific_dict = {}
-    specific_dict = tree2dictSecific(root, specific_dict)
+    public_dict, specific_dict = tree2dict()
     print(specific_dict)
     print(specific_dict["SOUR1"].info)
     print(specific_dict["SOUR1"].lowAddrSet)
