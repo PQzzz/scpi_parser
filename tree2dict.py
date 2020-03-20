@@ -15,6 +15,7 @@ def tree2dictPublic(root):
 
 
 def tree2dictSecific(root,specific_dict):
+
     if not root.children:
         return
     for node in root.children:
